@@ -19,7 +19,8 @@ export default defineConfig(
 
     rules: {
       "no-undef": 'off',
-      "@typescript-eslint/no-explicit-any": "off"
+      "@typescript-eslint/no-explicit-any": "off",
+      "svelte/no-navigation-without-resolve": ["error", { "ignoreLinks": true }]
     }
   },
   {

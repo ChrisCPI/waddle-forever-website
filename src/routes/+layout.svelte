@@ -40,7 +40,7 @@
 
       <!-- Desktop Menu -->
       <div class="hidden md:flex md:space-x-16">
-        {#each navLinks as { href, label }}
+        {#each navLinks as { href, label }, index (index)}
           <a {href} class={linkClass}>{label}</a>
         {/each}
       </div>
@@ -56,7 +56,7 @@
     <!-- Mobile Menu -->
     {#if isMenuOpen}
       <div class="flex flex-col md:hidden space-y-4 p-5">
-        {#each navLinks as { href, label }}
+        {#each navLinks as { href, label }, index (index)}
           <a {href} class={linkClass}>{label}</a>
         {/each}
       </div>
