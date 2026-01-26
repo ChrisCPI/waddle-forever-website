@@ -1,0 +1,11 @@
+@import 'tailwindcss';
+
+@media (prefers-color-scheme: dark) {
+
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
