@@ -1,4 +1,5 @@
 @import 'tailwindcss';
+@plugin '@tailwindcss/typography';
 
 @media (prefers-color-scheme: dark) {
 
@@ -8,4 +9,26 @@
   .text-balance {
     text-wrap: balance;
   }
+}
+
+.prose h1 {
+  @apply text-4xl font-bold mb-6;
+}
+
+.prose p {
+  @apply text-lg mt-2;
+  color: var(--color-white);
+}
+
+.prose code {
+  @apply before:content-none;
+  @apply after:content-none;
+  font-family: monospace;
+  background-color: #f4f4ff26;
+  padding: 3px 4px;
+  border-radius: 4px;
+}
+
+.prose pre code {
+  all: unset;
 }

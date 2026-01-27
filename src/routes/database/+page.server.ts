@@ -1,5 +1,5 @@
-import { redirect } from '@sveltejs/kit';
+import { fetchMarkdown } from "$lib/fetch-markdown";
 
-export function load() {
-  return redirect(303, 'https://github.com/nhaar/Waddle-Forever/blob/main/guide/DATABASE.md');
+export async function load() {
+  return { markdown: await fetchMarkdown('DATABASE') }
 }
