@@ -1,26 +1,18 @@
-# sv
+# waddle-forever-website
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+The main website for Waddle Forever built in Svelte.
 
-## Creating a project
+## How to run locally
 
-If you're seeing this, you've probably already done this step. Congrats!
-
-```sh
-# create a new project
-npx sv create my-app
-```
-
-To recreate this project with the same configuration:
+1. Install dependencies
 
 ```sh
-# recreate this project
-npx sv create --template minimal --types ts --add tailwindcss="plugins:none" eslint --install npm ./
+npm install
 ```
 
-## Developing
+2. Create the `version-cache` file at the root of the repository. Should be in the format of: "1.2.3"
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+3. Run:
 
 ```sh
 npm run dev
@@ -31,12 +23,12 @@ npm run dev -- --open
 
 ## Building
 
-To create a production version of your app:
+To create a production version:
 
 ```sh
 npm run build
 ```
 
-You can preview the production build with `npm run preview`.
+Preview the production build with `npm run preview`.
 
 > To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.

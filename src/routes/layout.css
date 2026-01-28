@@ -1,5 +1,4 @@
 @import 'tailwindcss';
-@plugin '@tailwindcss/typography';
 
 @media (prefers-color-scheme: dark) {
 
@@ -11,24 +10,72 @@
   }
 }
 
-.prose h1 {
-  @apply text-4xl font-bold mb-6;
+@utility button {
+  @apply 
+  text-white 
+  bg-[#0280cd] 
+  hover:bg-[#0056a6]
+  active:bg-[#00ccff]
+  focus:outline-none
+  text-center 
+  p-1.25 m-1 
+  border-none 
+  rounded-lg 
+  cursor-pointer 
+  no-underline
+  font-bold 
+  text-base 
+  min-w-22.5;
+  box-shadow: 
+    0px 0.3px 0 1.5px #003366,
+    -0.9px -0.9px 0 1.3px #00529B,
+    1.2px 1.2px 0 1.3px #00ccff,
+    inset 1px 0 0 0 #00ccff;
 }
 
-.prose p {
-  @apply text-lg mt-2;
-  color: var(--color-white);
-}
+@layer base {
+  h1 {
+    @apply text-4xl font-bold mb-6; 
+  }
 
-.prose code {
-  @apply before:content-none;
-  @apply after:content-none;
-  font-family: monospace;
-  background-color: #f4f4ff26;
-  padding: 3px 4px;
-  border-radius: 4px;
-}
+  h2 {
+    @apply text-3xl font-semibold;
+  }
 
-.prose pre code {
-  all: unset;
+  h3 {
+    @apply text-2xl font-semibold;
+  }
+
+  p {
+    @apply text-lg mt-2 text-white;
+  }
+
+  a {
+    @apply underline hover:text-blue-200;
+  }
+
+  header a {
+    @apply no-underline
+  }
+
+  .md-viewer img {
+    @apply my-5
+  }
+
+  .md-viewer p {
+    @apply text-lg mb-5 text-white;
+  }
+
+  pre {
+    @apply text-gray-300 text-sm bg-black/50 rounded-md p-4 my-4 overflow-auto;
+  }
+
+  code {
+    @apply before:content-none after:content-none; /* gets rid of the backticks */
+    @apply text-sm font-mono bg-[#f4f4ff26] px-1 py-0.75 rounded-sm;
+  }
+
+  pre code {
+    all: unset;
+  }
 }

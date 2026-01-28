@@ -16,37 +16,23 @@
       </p>
       <div>
         <p>Download version {CURRENT_VERSION}:</p>
-        <div class="flex gap-x-3 mt-2">
-          <div
-            class="border border-black rounded bg-[#0280d9] text-center w-24"
-          >
-            <a
-              href={`https://github.com/nhaar/Waddle-Forever/releases/download/v${CURRENT_VERSION}/WaddleForever-Setup-${CURRENT_VERSION}.exe`}
-            >
-              Windows
-            </a>
-          </div>
-          <div
-            class="border border-black rounded bg-[#0280d9] text-center w-24"
-          >
-            <a href="/linux"> Linux </a>
-          </div>
-          <div
-            class="border border-black rounded bg-[#0280d9] text-center w-24"
-          >
-            <a
-              href={`https://github.com/nhaar/Waddle-Forever/releases/download/v${CURRENT_VERSION}/WaddleForever-${CURRENT_VERSION}.dmg`}
-            >
-              macOS
-            </a>
-          </div>
+        <div class="flex gap-x-2 mt-2">
+          <a href="https://github.com/nhaar/Waddle-Forever/releases/download/v{CURRENT_VERSION}/WaddleForever-Setup-{CURRENT_VERSION}.exe" class="button">
+            Windows
+          </a>
+          <a href="/linux" class="button">
+            Linux
+          </a>
+          <a href="https://github.com/nhaar/Waddle-Forever/releases/download/v{CURRENT_VERSION}/WaddleForever-{CURRENT_VERSION}.dmg" class="button">
+            macOS
+          </a>
         </div>
       </div>
     </div>
     <div class="relative max-w-2xl">
-      <img src="/20172005.png" alt="Club Penguin from 2005-2017" width={752} height={472} />
+      <img src="/20172005.png" alt="Club Penguin from 2005-2017" width="752" height="472" />
     </div>
-    <div class="mb-2">
+    <div>
       Waddle Forever is still in development, so please beware of bugs! You
       can talk with us on the Discord server above.
     </div>

@@ -28,7 +28,7 @@
   <link rel="icon" href={favicon} />
 </svelte:head>
 
-<header class="bg-blue-600 text-white p-3">
+<header class="bg-[#0280CD] border-b-2 border-[#003366] shadow-[0_0_0_2px_#fff,0_0_0_4px_#ffffff80,inset_0_-2px_0_0_#00529B] text-white p-3">
   <nav class="max-w-6xl mx-auto">
     <div class="flex items-center justify-between">
       <a href="/">
@@ -46,7 +46,7 @@
       </div>
 
       <button
-        class="text-white text-3xl md:hidden focus:outline-none"
+        class="text-white text-3xl md:hidden focus:outline-none cursor-pointer"
         onclick={() => (isMenuOpen = !isMenuOpen)}
       >
         ☰
@@ -68,9 +68,9 @@
   {@render children()}
 </div>
 
-<footer class="max-w-6xl w-full mx-auto py-4">
+<footer class="max-w-6xl w-full mx-auto py-5">
   <hr />
-  <p class="text-sm text-gray-300">
+  <div class="text-sm text-blue-200 p-2">
     Not affiliated with Disney. Waddle Forever is free and not-for-profit.
-  </p>
+  </div>
 </footer>

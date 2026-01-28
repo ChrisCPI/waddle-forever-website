@@ -1,7 +1,7 @@
 <script lang="ts">
   import { marked } from 'marked'
 
-  let { text } = $props();
+  let { md } = $props();
 
   const BASE = 'https://raw.githubusercontent.com/nhaar/Waddle-Forever/main/guide/';
 
@@ -14,4 +14,4 @@
   })
 </script>
 
-<div class="prose prose-invert">{@html marked(text)}</div>
+<div class="max-w-prose md-viewer">{@html marked(md)}</div>
