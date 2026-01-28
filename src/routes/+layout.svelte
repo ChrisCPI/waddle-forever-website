@@ -1,6 +1,6 @@
 <script lang="ts">
   import './layout.css';
-  import favicon from '$lib/assets/favicon.svg';
+  // import favicon from '$lib/assets/favicon.svg';
 
   let { children } = $props();
 
@@ -25,7 +25,7 @@
 <svelte:head>
   <title>Waddle Forever</title>
   <meta name="description" content="Play all eras of Club Penguin, hosted locally on your computer." />
-  <link rel="icon" href={favicon} />
+  <!--<link rel="icon" href={favicon} />-->
 </svelte:head>
 
 <header class="bg-[#0280CD] border-b-2 border-[#003366] shadow-[0_0_0_2px_#fff,0_0_0_4px_#ffffff80,inset_0_-2px_0_0_#00529B] text-white p-3">
