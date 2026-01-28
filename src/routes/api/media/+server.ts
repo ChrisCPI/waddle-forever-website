@@ -1,4 +1,4 @@
-import { z } from "zod"
+import { z } from 'zod'
 import { getCurrentVersion } from '$lib/version'
 import { createJsonPost } from '$lib/api'
 

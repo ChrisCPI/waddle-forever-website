@@ -14,4 +14,4 @@
   })
 </script>
 
-<div class="max-w-prose md-viewer">{@html marked(md)}</div>
+<div class="max-w-prose md-viewer min-w-0">{@html marked(md)}</div>

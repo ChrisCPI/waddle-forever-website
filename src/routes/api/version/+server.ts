@@ -1,7 +1,7 @@
-import { z } from "zod"
-import { createJsonPost } from "$lib/api"
-import { VersionLabel, getCurrentVersion } from "$lib/version"
-import { ErrorResponse } from "$lib/res"
+import { z } from 'zod'
+import { createJsonPost } from '$lib/api'
+import { VersionLabel, getCurrentVersion } from '$lib/version'
+import { ErrorResponse } from '$lib/res'
 
 const VersionObject = z.object({
   version: z.string()

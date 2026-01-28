@@ -1,6 +1,6 @@
 import { getCurrentVersion } from '$lib/version'
-import { createJsonPost, OSInformation } from "$lib/api"
-import { ErrorResponse } from "$lib/res"
+import { createJsonPost, OSInformation } from '$lib/api'
+import { ErrorResponse } from '$lib/res'
 
 export const POST = createJsonPost(async (body) => {
   const parse = OSInformation.safeParse(body)

@@ -1,10 +1,10 @@
 /** Route used for checking if two versions of a media share the same file or not */
 
-import { createJsonPost, isValidMediaName } from "$lib/api"
-import { getLastEquivalentVersion } from "$lib/media-versions"
-import { ErrorResponse } from "$lib/res"
-import { VersionLabel } from "$lib/version"
-import { z } from "zod"
+import { createJsonPost, isValidMediaName } from '$lib/api'
+import { getLastEquivalentVersion } from '$lib/media-versions'
+import { ErrorResponse } from '$lib/res'
+import { VersionLabel } from '$lib/version'
+import { z } from 'zod'
 
 const VersionCheckRequest = z.object({
   media: z.string(),

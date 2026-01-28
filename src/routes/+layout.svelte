@@ -1,6 +1,6 @@
 <script lang="ts">
-  import "./layout.css";
-  import favicon from "$lib/assets/favicon.svg";
+  import './layout.css';
+  import favicon from '$lib/assets/favicon.svg';
 
   let { children } = $props();
 
@@ -10,14 +10,14 @@
   }
 
   const navLinks: NavLink[] = [
-    { href: "/faq", label: "FAQ" },
-    { href: "/mods", label: "Mods" },
-    { href: "https://github.com/nhaar/Waddle-Forever", label: "GitHub" },
-    { href: "https://discord.gg/URHXm3cFv5", label: "Discord" },
+    { href: '/faq', label: 'FAQ' },
+    { href: '/mods', label: 'Mods' },
+    { href: 'https://github.com/nhaar/Waddle-Forever', label: 'GitHub' },
+    { href: 'https://discord.gg/URHXm3cFv5', label: 'Discord' },
   ];
 
   const linkClass =
-    "text-3xl font-bold hover:underline hover:text-blue-200 transition-colors duration-200";
+    'text-3xl font-bold hover:underline hover:text-blue-200 transition-colors duration-200';
 
   let isMenuOpen = $state(false);
 </script>

@@ -1,5 +1,5 @@
 <script lang="ts">
-  import MarkdownViewer from "$lib/components/MarkdownViewer.svelte";
+  import MarkdownViewer from '$lib/components/MarkdownViewer.svelte';
 
   let { data } = $props();
 </script>

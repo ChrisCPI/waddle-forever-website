@@ -71,11 +71,13 @@
   }
 
   code {
-    @apply before:content-none after:content-none; /* gets rid of the backticks */
     @apply text-sm font-mono bg-[#f4f4ff26] px-1 py-0.75 rounded-sm;
   }
 
   pre code {
     all: unset;
+    display: inline-block;
+    white-space: pre-wrap;
+    word-break: break-word;
   }
 }

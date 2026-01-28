@@ -1,6 +1,6 @@
-import { z } from "zod"
-import { createJsonPost } from "$lib/api"
-import { ErrorResponse } from "$lib/res"
+import { z } from 'zod'
+import { createJsonPost } from '$lib/api'
+import { ErrorResponse } from '$lib/res'
 
 const InstallerVersion = z.object({
   version: z.string()
